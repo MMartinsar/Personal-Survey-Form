@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div>
+            <h1 id="title">Marcos Martin Survey Form</h1>
+            <p id="description">Help me improve my HTML taking this quick form</p>
+
+            <form id="survey-form">
+
+                <fieldset>
+                    <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+                    <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+                    <label id="number-label" for="age">Age (optional): <input id="number" name="number" type="number" min="14" max="120" placeholder="Enter your age" /></label>
+                    <label for="role">Which option describes your current role: <select id="dropdown" name="role" required>
+                        <option value="">Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Prefer not to say</option>
+                        <option value="4">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <p>Would you recommend this form?</p>
+                    <label for="def"><input type="radio" name="recommend" value="Yes" />Definetly</label>
+                    <label for="maybe"><input type="radio" name="recommend" value="Maybe" />Maybe</label>
+                    <label for="nsure"><input type="radio" name="recommend" value="No" />Not sure</label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="fav">Which is your favorite part of this form? <select id="dropdown" name="fav" required>
+                        <option value="">Select an option</option>
+                        <option value="1">The HTML</option>
+                        <option value="2">The CSS</option>
+                        <option value="3">None</option>
+                        <option value="4">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <p>What would you like me to learn next?</p>
+                    <label for="python"><input type="checkbox" name="learn" value="python" />Python</label>
+                    <label for="c"><input type="checkbox" name="learn" value="c" />C#</label>
+                    <label for="sql"><input type="checkbox" name="learn" value="sql" />MySQL</label>
+                    <label for="javascript"><input type="checkbox" name="learn" value="javascript" />Javascript</label>
+                    <label for="arduino"><input type="checkbox" name="learn" value="arduino" />Arduino</label>
+                    <label for="r"><input type="checkbox" name="learn" value="r" />R</label>
+                    <label for="unity"><input type="checkbox" name="learn" value="unity" />Unity</label>
+                </fieldset>
+                
+                <fieldset>
+                    Any suggestions?
+                    <textarea name="suggestions" cols="40" rows="5" placeholder="Enter your comment here..."></textarea>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Submit" />
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
