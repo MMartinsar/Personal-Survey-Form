@@ -19,4 +19,4 @@ I also worked with different attributes as:
 - Required
 - Min & Max
 
-For the looks of the survey I used a CSS document connected to the HTML where I defined the IDs and other attribute customizations.
+For the looks of the survey I used a CSS document connected to the HTML, where I defined the IDs and other attribute customizations.
